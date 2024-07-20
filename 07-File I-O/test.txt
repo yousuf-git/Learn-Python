@@ -1,0 +1,4 @@
+
+New text added by r+ mode.
+New text added by a+ mode
+New text by 'a' mode

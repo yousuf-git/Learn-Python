@@ -1,0 +1,31 @@
+File Types:
+    Text File --> txt, docx etc.
+    Binary file --> mp4, mp3, mov, png, jpeg etc.
+At the end both files are in form of bits in memory
+
+File Operations:
+    1. Open --> open("file_name", "mode")
+                by default mode is read
+
+Character :  Meaning
+
+'r' :   Read(default)
+'w' :   Open for write, truncating (deleting) file first
+'x' :   Creating new file and open it for write
+'a' :   Open for write, appending at the end if file exists
+'b' :   Binary Mode
+'t' :   Text Mode
+'+' :   Open a diskk file for updating(read and write)
+
+Two modes can be combined
+By default rt is the mode --> read text file
+r+ --> read + write (used to read file and start writing from start)
+
+w+ --> write + read (used to read and write file but first all data will be truncated)
+If all previous data is lost when open in w+ and if we write new data curosr will write data and move to end there's nothing to read in both situations then what is the purpose of read facility in it ?
+
+a+ --> read + append (read and append, cursor is at end, if we try to read it will be blank)
+
+Wrtiting a file can be in 2 ways:
+    Open in "w" mode --> overwrite or
+    Open in "a" mode --> append (add at end)

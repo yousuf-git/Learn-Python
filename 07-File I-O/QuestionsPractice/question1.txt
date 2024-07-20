@@ -1,0 +1,4 @@
+Hi bruh
+I'm Learning File I/O
+using Java.
+It's kinda fun in Java
