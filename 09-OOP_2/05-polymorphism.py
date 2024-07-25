@@ -33,6 +33,9 @@ class Complex:
     
     def __mod__(self, num2):
         print("Mod : ", self.real % num2.real, "i", "+", self.img % num2.img, "j")
+    
+    def __floordiv__(self, num2):
+        print("Floor Div : ", self.real // num2.real, "i", "+", self.img // num2.img, "j")
 
 num1 = Complex(-2,5)
 num2 = Complex(-3,-9)
@@ -43,8 +46,19 @@ num2.display()
 
 print()
 num1 + num2
+num1 - num2
+num1 * num2
+# num1 / num2 # Python 3.x doesn't support / operator overloading, so it will not work
+num1 // num2
+
+num1 % num2
 # num1.__add__(num2)
 # num1.__sub__(num2)
 # num1.__mul__(num2)
 # num1.__div__(num2)
 # num1.__mod__(num2)
+
+print("\nList of Dunder Methods: ")
+print()
+print(dir(int))
+print()
